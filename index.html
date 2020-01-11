@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<head>
+    <meta charset="UTF-8"> 
+    <title>Game of Chess</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div class="chessboard">
+
+        <!-- 8th row -->
+        <div class = "vcor" id = "vcor8"> <span></span> </div>
+        <div class = "white br r1 bpiece" id = "18"></div>
+        <div class = "black bk k1 bpiece" id = "28"></div>
+        <div class = "white bb b1 bpiece" id = "38"></div>
+        <div class = "black bq bpiece" id = "48"></div>
+        <div class = "white bking bpiece" id = "58"></div>
+        <div class = "black bb b2 bpiece" id = "68"></div>
+        <div class = "white bk k2 bpiece" id = "78"></div>
+        <div class = "black br r2 bpiece" id = "88"></div>
+        <!-- 7th row -->
+        <div class = "vcor" id = "vcor7"> <span></span> </div>
+        <div class="black bp p1 bpiece" id = "17"></div>
+        <div class="white bp p2 bpiece" id = "27"></div>
+        <div class="black bp p3 bpiece" id = "37"></div>
+        <div class="white bp p4 bpiece" id = "47"></div>
+        <div class="black bp p5 bpiece" id = "57"></div>
+        <div class="white bp p6 bpiece" id = "67"></div>
+        <div class="black bp p7 bpiece" id = "77"></div>
+        <div class="white bp p8 r2 bpiece" id = "87"></div>
+        <!-- 6th row -->
+        <div class = "vcor" id = "vcor6"> <span></span> </div>
+        <div class="white" id = "16"></div>
+        <div class="black" id = "26"></div>
+        <div class="white" id = "36"></div>
+        <div class="black" id = "46"></div>
+        <div class="white" id = "56"></div>
+        <div class="black" id = "66"></div>
+        <div class="white" id = "76"></div>
+        <div class="black" id = "86"></div>
+        <!-- 5th row -->
+        <div class = "vcor" id = "vcor5"> <span></span> </div>
+        <div class="black" id = "15"></div>
+        <div class="white" id = "25"></div>
+        <div class="black" id = "35"></div>
+        <div class="white" id = "45"></div>
+        <div class="black" id = "55"></div>
+        <div class="white" id = "65"></div>
+        <div class="black" id = "75"></div>
+        <div class="white" id = "85"></div>
+        <!-- 4th row -->
+        <div class = "vcor" id = "vcor4"> <span></span> </div>
+        <div class="white" id = "14"></div>
+        <div class="black" id = "24"></div>
+        <div class="white" id = "34"></div>
+        <div class="black" id = "44"></div>
+        <div class="white" id = "54"></div>
+        <div class="black" id = "64"></div>
+        <div class="white" id = "74"></div>
+        <div class="black" id = "84"></div>
+        <!-- 3rd row -->
+        <div class = "vcor" id = "vcor3"> <span></span> </div>
+        <div class="black" id = "13"></div>
+        <div class="white" id = "23"></div>
+        <div class="black" id = "33"></div>
+        <div class="white" id = "43"></div>
+        <div class="black" id = "53"></div>
+        <div class="white" id = "63"></div>
+        <div class="black" id = "73"></div>
+        <div class="white" id = "83"></div>
+        <!-- 2nd row -->
+        <div class = "vcor" id = "vcor2"> <span></span> </div>
+        <div class="white wp p1 wpiece" id = "12"></div>
+        <div class="black wp p2 wpiece" id = "22"></div>
+        <div class="white wp p3 wpiece" id = "32"></div>
+        <div class="black wp p4 wpiece" id = "42"></div>
+        <div class="white wp p5 wpiece" id = "52"></div>
+        <div class="black wp p6 wpiece" id = "62"></div>
+        <div class="white wp p7 wpiece" id = "72"></div>
+        <div class="black wp p8 wpiece" id = "82"></div>
+        <!-- 1st row -->
+        <div class = "vcor" id = "vcor1"> <span></span> </div>
+        <div class="black wr r1 wpiece" id = "11"></div>
+        <div class="white wk k1 wpiece" id = "21"></div>
+        <div class="black wb b1 wpiece" id = "31"></div>
+        <div class="white wq wpiece" id = "41"></div>
+        <div class="black wking wpiece" id = "51"></div>
+        <div class="white wb b2 wpiece" id = "61"></div>
+        <div class="black wk k2 wpiece" id = "71"></div>
+        <div class="white wr r2 wpiece" id = "81"></div>
+
+        <!-- Horizontal Coordinates -->
+        <div class = "hcor shcor" id = "hcor1">  </div>
+        <div class = "hcor" id = "hcor2">  </div>
+        <div class = "hcor" id = "hcor3">  </div>
+        <div class = "hcor" id = "hcor4">  </div>
+        <div class = "hcor" id = "hcor5">  </div>
+        <div class = "hcor" id = "hcor6">  </div>
+        <div class = "hcor" id = "hcor7">  </div>
+        <div class = "hcor" id = "hcor8">  </div>
+
+        <div class = "menutext"> </div>
+        <div class = "ngame"> </div>
+        <div class = "bai"> </div>
+        <div class = "wai"> </div>
+        
+    </div>
+    <div class = "msgbox">  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src = "ai.js" charset="utf-8"></script>
+    <script src = "revpule.js" charset="utf-8"></script>
+    <script src = "boardengine.js" charset="utf-8"></script>
+</body>
+</html>
