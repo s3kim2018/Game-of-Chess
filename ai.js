@@ -11,7 +11,7 @@ class Ai {
 
     findmove(turn, board) {
         if (turn == "W") {
-            this.gametree(board, 3, true, 1, Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER);
+            this.gametree(board, 2, true, 1, Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER);
             let fromx = parseInt(this._lastfrom.charAt(0), 10);
             let fromy = parseInt(this._lastfrom.charAt(1), 10);
             let tox =  parseInt(this._lastto.charAt(0), 10);
@@ -23,7 +23,7 @@ class Ai {
             board.makemove(hfromx.toString() + hfromy.toString(), htox.toString() + htoy.toString());
 
         } else if (turn == "B") {
-            this.gametree(board, 3, true, -1, Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER);
+            this.gametree(board, 2, true, -1, Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER);
             let fromx = parseInt(this._lastfrom.charAt(0), 10);
             let fromy = parseInt(this._lastfrom.charAt(1), 10);
             let tox =  parseInt(this._lastto.charAt(0), 10);
