@@ -2391,7 +2391,7 @@ var text = document.querySelector(".menutext");
 var button1 = document.querySelector(".ngame");
 var button2 = document.querySelector(".bai");
 var button3 = document.querySelector(".wai");
-var text3 = "Please Choose a Game Option! <br/> Chess Driver V1.0 (Slow AI)"
+var text3 = "Please Choose a Game Option! <br/> Chess Driver V1.0"
 async function main() {
     var text1 = "A Game of Chess Developed by Brian Kim."
     var text1l = text1.split(""); 
