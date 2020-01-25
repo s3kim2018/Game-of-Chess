@@ -3,7 +3,7 @@
  */
 class Ai {
     constructor() {
-        this.winningval = 1000;
+        this.winningval = 280;
         this.losingval = -100000;
         this._lastfrom = null; 
         this._lastto = null; 
@@ -108,9 +108,9 @@ class Ai {
             let x = parseInt(board._piecelocations[i].charAt(0), 10);
             let y = parseInt(board._piecelocations[i].charAt(1), 10);
             if (board._board[y][x].piece == "♔") {
-                score += 180;
+                score += 250;
             } else if (board._board[y][x].piece == "♚") {
-                score -= 180; 
+                score -= 250; 
             } else if (board._board[y][x].piece == "♕") {
                 score += 130; 
             } else if (board._board[y][x].piece == "♛") {
@@ -128,10 +128,10 @@ class Ai {
             } else if (board._board[y][x].piece == "♞") {
                 score -= 65; 
             } else if (board._board[y][x].piece == "♙") {
-                score += 45 
+                score += 30 
                 score += Math.abs(y - 0) * 5; 
             } else if (board._board[y][x].piece == "♟") {
-                score -= 45
+                score -= 30
                 score -= Math.abs(y - 8) * 5; 
             }
         }
